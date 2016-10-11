@@ -2,6 +2,7 @@
 using ShopKhanMat.Data.Repositories;
 using ShopKhanMat.Model.Models;
 using System.Collections.Generic;
+using System;
 
 namespace ShopKhanMat.Service
 {
@@ -18,6 +19,7 @@ namespace ShopKhanMat.Service
         PostCategory GetById(int id);
 
         IEnumerable<PostCategory> GetAllByParentID(int parentId);
+        void Save();
     }
 
     public class PostCategoryService : IPostCategoryService
@@ -54,6 +56,11 @@ namespace ShopKhanMat.Service
         public PostCategory GetById(int id)
         {
             return _postCategoryRepository.GetSingleById(id);
+        }
+
+        public void Save()
+        {
+            _unitOfWork.Commit();
         }
 
         public void Update(PostCategory postCategory)
