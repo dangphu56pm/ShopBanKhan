@@ -24,6 +24,7 @@ namespace ShopKhanMat.Model.Models
         [ForeignKey("GroupID")]
         public virtual MenuGroup MenuGroup { get; set; }
 
+        [MaxLength(10)]
         public string Target { get; set; }
 
         [Required]
