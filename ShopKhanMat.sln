@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopKhanMat.Common", "ShopKhanMat.Common\ShopKhanMat.Common.csproj", "{93A6BD0E-6E81-4CF5-861C-6F4DA3AFF805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopKhanMat.Model", "ShopKhanMat.Model\ShopKhanMat.Model.csproj", "{EF514565-B8EF-4AFE-BFD1-BF6F9617423F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopKhanMat.Data", "ShopKhanMat.Data\ShopKhanMat.Data.csproj", "{90BA92DF-4677-4450-8152-533850AA3858}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopKhanMat.Service", "ShopKhanMat.Service\ShopKhanMat.Service.csproj", "{9F8B339E-A598-495B-B81A-23AACCE598F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopKhanMat.UnitTest", "ShopKhanMat.UnitTest\ShopKhanMat.UnitTest.csproj", "{0AAEB20B-9F10-4E8F-91D3-60E31D9B34F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopKhanMat.Web", "ShopKhanMat.Web\ShopKhanMat.Web.csproj", "{FE2BAD94-32E5-4636-ADC8-7F8F832A5D88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93A6BD0E-6E81-4CF5-861C-6F4DA3AFF805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93A6BD0E-6E81-4CF5-861C-6F4DA3AFF805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93A6BD0E-6E81-4CF5-861C-6F4DA3AFF805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93A6BD0E-6E81-4CF5-861C-6F4DA3AFF805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF514565-B8EF-4AFE-BFD1-BF6F9617423F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF514565-B8EF-4AFE-BFD1-BF6F9617423F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF514565-B8EF-4AFE-BFD1-BF6F9617423F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF514565-B8EF-4AFE-BFD1-BF6F9617423F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BA92DF-4677-4450-8152-533850AA3858}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BA92DF-4677-4450-8152-533850AA3858}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BA92DF-4677-4450-8152-533850AA3858}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BA92DF-4677-4450-8152-533850AA3858}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8B339E-A598-495B-B81A-23AACCE598F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8B339E-A598-495B-B81A-23AACCE598F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8B339E-A598-495B-B81A-23AACCE598F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8B339E-A598-495B-B81A-23AACCE598F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AAEB20B-9F10-4E8F-91D3-60E31D9B34F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AAEB20B-9F10-4E8F-91D3-60E31D9B34F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AAEB20B-9F10-4E8F-91D3-60E31D9B34F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AAEB20B-9F10-4E8F-91D3-60E31D9B34F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE2BAD94-32E5-4636-ADC8-7F8F832A5D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2BAD94-32E5-4636-ADC8-7F8F832A5D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2BAD94-32E5-4636-ADC8-7F8F832A5D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE2BAD94-32E5-4636-ADC8-7F8F832A5D88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
