@@ -11,6 +11,6 @@ namespace ShopKhanMat.Model.Models
         public string ID { set; get; }
 
         [Required]
-        public string Content { get; set; }
+        public string Content { get; set; }  
     }
 }
