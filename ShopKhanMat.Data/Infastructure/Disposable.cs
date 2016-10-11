@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ShopKhanMat.Data.Infastructure
 {
@@ -20,6 +16,7 @@ namespace ShopKhanMat.Data.Infastructure
             Dispose(true);
             GC.SuppressFinalize(this);
         }
+
         private void Dispose(bool disposing)
         {
             if (!isDisposed && disposing)

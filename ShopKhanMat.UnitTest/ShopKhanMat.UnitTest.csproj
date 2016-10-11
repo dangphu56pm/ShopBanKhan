@@ -71,10 +71,6 @@
       <Project>{9f8b339e-a598-495b-b81a-23aacce598f4}</Project>
       <Name>ShopKhanMat.Service</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ShopKhanMat.Web\ShopKhanMat.Web.csproj">
-      <Project>{fe2bad94-32e5-4636-adc8-7f8f832a5d88}</Project>
-      <Name>ShopKhanMat.Web</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

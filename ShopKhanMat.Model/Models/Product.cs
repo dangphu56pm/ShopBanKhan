@@ -1,7 +1,6 @@
 ﻿using ShopKhanMat.Model.Abstract;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Xml.Linq;
 
 namespace ShopKhanMat.Model.Models
 {
@@ -10,26 +9,40 @@ namespace ShopKhanMat.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int ID { get; set; }
+        public int ID { set; get; }
 
         [Required]
-        public string Name { get; set; }
+        [MaxLength(256)]
+        public string Name { set; get; }
 
         [Required]
-        public string Alias { get; set; }
+        [MaxLength(256)]
+        public string Alias { set; get; }
 
-        public string Image { get; set; }
-        public XElement MoreImage { get; set; }
-        public decimal Price { get; set; }
-        public decimal? PromotionPrice { get; set; }
-        public int? Warranty { get; set; }
-        public string Description { get; set; }
-        public string Content { get; set; }
-        public bool? HomeFlage { set; get; }
-        public bool? HotFlage { get; set; }
-        public int? ViewCount { get; set; }
+        [Required]
+        public int CategoryID { set; get; }
+
+        [MaxLength(256)]
+        public string Image { set; get; }
+
+        [Column(TypeName = "xml")]
+        public string MoreImages { set; get; }
+
+        public decimal Price { set; get; }
+
+        public decimal? PromotionPrice { set; get; }
+        public int? Warranty { set; get; }
+
+        [MaxLength(500)]
+        public string Description { set; get; }
+
+        public string Content { set; get; }
+
+        public bool? HomeFlag { set; get; }
+        public bool? HotFlag { set; get; }
+        public int? ViewCount { set; get; }
 
         [ForeignKey("CategoryID")]
-        public virtual ProductCategory ProductCategory { get; set; }
+        public virtual ProductCategory ProductCategory { set; get; }
     }
 }
