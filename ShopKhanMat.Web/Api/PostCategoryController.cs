@@ -10,7 +10,8 @@ namespace ShopKhanMat.Web.Api
     [RoutePrefix("api/postcategory")]
     public class PostCategoryController : ApiControllerBase
     {
-        private IPostCategoryService _postCategoryService;        
+        private IPostCategoryService _postCategoryService;
+
         public PostCategoryController(IErrorService errorService, IPostCategoryService postCategoryService) : base(errorService)
         {
             this._postCategoryService = postCategoryService;
@@ -21,17 +22,10 @@ namespace ShopKhanMat.Web.Api
         {
             return CreateHttpResponse(request, () =>
             {
-                HttpResponseMessage response = null;
-                if (ModelState.IsValid)
-                {
-                    request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
-                }
-                else
-                {
-                    var listCategory = _postCategoryService.GetAll();
+                var listCategory = _postCategoryService.GetAll();
 
-                    response = request.CreateResponse(HttpStatusCode.OK, listCategory);
-                }
+                HttpResponseMessage response = request.CreateResponse(HttpStatusCode.OK, listCategory);
+
                 return response;
             });
         }
