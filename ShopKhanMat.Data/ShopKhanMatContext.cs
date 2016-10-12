@@ -1,9 +1,10 @@
-﻿using ShopKhanMat.Model.Models;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
+using ShopKhanMat.Model.Models;
 using System.Data.Entity;
 
 namespace ShopKhanMat.Data
 {
-    public class ShopKhanMatContext : DbContext
+    public class ShopKhanMatContext : IdentityDbContext<ApplicationUser>
     {
         public ShopKhanMatContext() : base("ShopKhanMatConnectionString")
         {
@@ -31,8 +32,15 @@ namespace ShopKhanMat.Data
         public DbSet<VisitorStatistic> VisitorStatistics { get; set; }
         public DbSet<Error> Errors { get; set; }
 
+        public static ShopKhanMatContext Create()
+        {
+            return new ShopKhanMatContext();
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<IdentityUserRole>().HasKey(i => new { i.UserId, i.RoleId });
+            modelBuilder.Entity<IdentityUserLogin>().HasKey(i => i.UserId);
         }
     }
 }
