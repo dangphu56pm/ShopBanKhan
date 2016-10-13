@@ -202,6 +202,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="InfaStructure\Core\ApiControllerBase.cs" />
+    <Compile Include="InfaStructure\Core\PaginationSet.cs" />
     <Compile Include="InfaStructure\Extensions\EntityExtensions.cs" />
     <Compile Include="Mappings\AutoMapperConfiguration.cs" />
     <Compile Include="Models\PostCategoryViewModel.cs" />
@@ -227,6 +228,9 @@
     <Content Include="App\components\product_categories\productCategories.module.js" />
     <Content Include="App\components\product_categories\productCategoryListController.js" />
     <Content Include="App\components\product_categories\productCategoryListView.html" />
+    <Content Include="App\shared\directives\pagerDirective.html" />
+    <Content Include="App\shared\directives\pagerDirective.js" />
+    <Content Include="App\shared\filters\statusFilter.js" />
     <Content Include="App\shared\modules\shopKhanMat.common.js" />
     <Content Include="App\shared\services\apiService.js" />
     <Content Include="Assets\admin\css\AdminLTE.css" />
