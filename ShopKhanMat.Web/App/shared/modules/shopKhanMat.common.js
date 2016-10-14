@@ -1,3 +1,3 @@
 ﻿(function () {
-    angular.module('shopKhanMat.common',['ui.router'])
+    angular.module('shopKhanMat.common', ['ui.router', 'ngBootbox'])
 })();
