@@ -7,11 +7,11 @@
         $stateProvider.state('products', {
             url: "/products",
             templateUrl: "/app/components/products/productListView.html",
-            Controller: "productListController"
-        }).state('product_add', {
-            url: "/product_add",
+            controller: "productListController"
+        }).state('add_product', {
+            url: "/add_product",
             templateUrl: "/app/components/products/productAddView.html",
-            Controller: "productAddController"
+            controller: "productAddController"
         });
     }
 })();
