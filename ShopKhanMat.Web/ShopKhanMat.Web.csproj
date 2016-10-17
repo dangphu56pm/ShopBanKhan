@@ -225,6 +225,9 @@
     <Content Include="App\app.js" />
     <Content Include="App\components\home\homeController.js" />
     <Content Include="App\components\home\homeView.html" />
+    <Content Include="App\components\home\rootController.js" />
+    <Content Include="App\components\login\loginController.js" />
+    <Content Include="App\components\login\loginView.html" />
     <Content Include="App\components\products\products.module.js" />
     <Content Include="App\components\products\productAddController.js" />
     <Content Include="App\components\products\productAddView.html" />
@@ -246,6 +249,7 @@
     <Content Include="App\shared\services\apiService.js" />
     <Content Include="App\shared\services\commonService.js" />
     <Content Include="App\shared\services\notificationService.js" />
+    <Content Include="App\shared\views\baseView.html" />
     <Content Include="Assets\admin\css\AdminLTE.css" />
     <Content Include="Assets\admin\css\AdminLTE.min.css" />
     <Content Include="Assets\admin\css\skins\skin-black-light.css" />
