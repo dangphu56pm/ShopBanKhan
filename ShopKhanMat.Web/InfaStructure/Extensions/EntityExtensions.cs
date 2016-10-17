@@ -80,6 +80,7 @@ namespace ShopKhanMat.Web.InfaStructure.Extensions
             product.PromotionPrice = productVm.PromotionPrice;
             product.Warranty = productVm.Warranty;
             product.HomeFlag = productVm.HomeFlag;
+            product.HotFlag = productVm.HotFlag;
             product.ViewCount = productVm.ViewCount;
 
             product.CreatedDate = productVm.CreatedDate;
@@ -88,6 +89,7 @@ namespace ShopKhanMat.Web.InfaStructure.Extensions
             product.UpdatedBy = productVm.UpdatedBy;
             product.MetaKeyword = productVm.MetaKeyword;
             product.MetaDescription = productVm.MetaDescription;
+            product.Tags = productVm.Tags;
             product.Status = productVm.Status;
         }
     }
