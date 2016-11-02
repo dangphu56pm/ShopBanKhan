@@ -1,7 +1,7 @@
 ﻿using ShopKhanMat.Data.Infastructure;
 using ShopKhanMat.Model.Models;
 
-namespace TeduShop.Data.Repositories
+namespace ShopKhanMat.Data.Repositories
 {
     public interface IVisitorStatisticRepository : IRepository<VisitorStatistic>
     {
