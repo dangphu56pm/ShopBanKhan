@@ -91,6 +91,7 @@ namespace ShopKhanMat.Web.InfaStructure.Extensions
             product.MetaDescription = productVm.MetaDescription;
             product.Tags = productVm.Tags;
             product.Status = productVm.Status;
+            product.Quantity = productVm.Quantity;
         }
     }
 }

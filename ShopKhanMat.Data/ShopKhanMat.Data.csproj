@@ -89,6 +89,10 @@
     <Compile Include="Migrations\201611020248283_AddColumnContentToSlide.Designer.cs">
       <DependentUpon>201611020248283_AddColumnContentToSlide.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611040701510_AddColumnQuantityToProducts.cs" />
+    <Compile Include="Migrations\201611040701510_AddColumnQuantityToProducts.Designer.cs">
+      <DependentUpon>201611040701510_AddColumnQuantityToProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ErrorRepository.cs" />
@@ -143,6 +147,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611020248283_AddColumnContentToSlide.resx">
       <DependentUpon>201611020248283_AddColumnContentToSlide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611040701510_AddColumnQuantityToProducts.resx">
+      <DependentUpon>201611040701510_AddColumnQuantityToProducts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
