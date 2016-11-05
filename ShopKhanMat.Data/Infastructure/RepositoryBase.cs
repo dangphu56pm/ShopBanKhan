@@ -102,7 +102,7 @@ namespace ShopKhanMat.Data.Infastructure
                 return query.FirstOrDefault(expression);
             }
 
-            return dataContext.Set<T>().FirstOrDefault();
+            return dataContext.Set<T>().FirstOrDefault(expression);
         }
 
         public virtual IEnumerable<T> GetMulti(Expression<Func<T, bool>> predicate, string[] includes = null)
