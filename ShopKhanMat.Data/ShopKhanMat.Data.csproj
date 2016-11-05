@@ -97,6 +97,10 @@
     <Compile Include="Migrations\201611041628030_AddForeignKeyProductTagToProducts.Designer.cs">
       <DependentUpon>201611041628030_AddForeignKeyProductTagToProducts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611050916259_AddPageItemToPages.cs" />
+    <Compile Include="Migrations\201611050916259_AddPageItemToPages.Designer.cs">
+      <DependentUpon>201611050916259_AddPageItemToPages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ErrorRepository.cs" />
@@ -157,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611041628030_AddForeignKeyProductTagToProducts.resx">
       <DependentUpon>201611041628030_AddForeignKeyProductTagToProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611050916259_AddPageItemToPages.resx">
+      <DependentUpon>201611050916259_AddPageItemToPages.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
