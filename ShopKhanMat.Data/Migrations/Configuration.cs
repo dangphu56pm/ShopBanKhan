@@ -19,6 +19,7 @@
             CreateProductCategorySample(context);
             CreateSlide(context);
             CreatePage(context);
+            CreateContactDetail(context);
             //  This method will be called after migrating to the latest version.
 
             //var manager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ShopKhanMatContext()));
@@ -141,6 +142,44 @@
                 }
 
             }
+        }
+
+        private void CreateContactDetail(ShopKhanMatContext context)
+        {
+            if (context.ContactDetails.Count() == 0)
+            {
+                try
+                {
+                    var contactDetail = new ContactDetail()
+                    {
+                        Name = "Shop Khăn Mặt",
+                        Address = "Ngõ 77 Xuân La",
+                        Email = "tedu@gmail.com",
+                        Lat = 21.0633645,
+                        Lng = 105.8053274,
+                        Phone = "01692743532",
+                        Website = "http://shopkhanmat.com.vn",
+                        Other = "",
+                        Status = true
+
+                    };
+                    context.ContactDetails.Add(contactDetail);
+                    context.SaveChanges();
+                }
+                catch (DbEntityValidationException ex)
+                {
+                    foreach (var eve in ex.EntityValidationErrors)
+                    {
+                        Trace.WriteLine($"Entity of type \"{eve.Entry.Entity.GetType().Name}\" in state \"{eve.Entry.State}\" has the following validation error.");
+                        foreach (var ve in eve.ValidationErrors)
+                        {
+                            Trace.WriteLine($"- Property: \"{ve.PropertyName}\", Error: \"{ve.ErrorMessage}\"");
+                        }
+                    }
+                }
+
+            }
+
         }
     }
 }

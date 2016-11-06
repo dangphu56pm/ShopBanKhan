@@ -10,6 +10,13 @@ namespace ShopKhanMat.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "Contact",
+                url: "lien-he.html",
+                defaults: new { controller = "Contact", action = "Index", id = UrlParameter.Optional },
+                namespaces: new string[] { "ShopKhanMat.Web.Controllers" }
+            );
+
+            routes.MapRoute(
                 name: "Login",
                 url: "dang-nhap.html",
                 defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional },
