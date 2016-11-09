@@ -54,7 +54,7 @@ namespace ShopKhanMat.Web.Controllers
 
                 feedbackViewModel.Name = "";
                 feedbackViewModel.Message = "";
-                feedbackViewModel.Email = "";
+                feedbackViewModel.Email = "";                
             }
             feedbackViewModel.ContactDetail = GetDetail();
 

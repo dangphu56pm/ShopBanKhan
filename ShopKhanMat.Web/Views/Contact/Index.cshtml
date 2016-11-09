@@ -4,6 +4,8 @@
 @{
     ViewBag.Title = "Liên hệ";
     Layout = "~/Views/Shared/Layouts.cshtml";
+    MvcCaptcha contactCaptcha = new MvcCaptcha("contactCaptcha");
+    contactCaptcha.Reset();
 }
 @section footerJS{
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ptIiB9pM65J6OvPLRxvxRJHIPWjsq0A"></script>
@@ -28,7 +30,7 @@
                 <dl>
                     <dt> </dt>
                     <dd>Điện thoại:<span> @Model.ContactDetail.Phone</span></dd>
-                    <dd>E-mail:&nbsp; <a href="mailto:@(Model.ContactDetail.Email)">@(Model.Email)</a></dd>
+                    <dd>E-mail:&nbsp; <a href="mailto:@(Model.ContactDetail.Email)">@(Model.ContactDetail.Email)</a></dd>
                 </dl>
             </address>
             <div class="clearfix"></div>
@@ -50,12 +52,12 @@
                         </div>
                     }
                     @Html.ValidationSummary(false, "", new { @class = "error" });
-                    @Html.TextBoxFor(model => model.Name, new { @class = "textbox" });
-                    @Html.TextBoxFor(model => model.Email, new { @class = "textbox" });
-                    @Html.TextAreaFor(model => model.Message);
+                    @Html.TextBoxFor(model => model.Name, new { @class = "textbox", placeholder = "Tên" });
+                    @Html.TextBoxFor(model => model.Email, new { @class = "textbox", placeholder = "Email" });
+                    @Html.TextAreaFor(model => model.Message, new { @placeholder = "Nội dung" });
 
 
-                    MvcCaptcha contactCaptcha = new MvcCaptcha("contactCaptcha");
+                    
                     @Html.Captcha(contactCaptcha)
                     @Html.TextBox("CaptchaCode")
 
